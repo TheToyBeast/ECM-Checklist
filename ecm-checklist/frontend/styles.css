@@ -1,0 +1,374 @@
+._checklist {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding:20px;
+
+}
+._radio div{
+	display:inline-block;
+	}
+.product:nth-child(even) {
+    background: #f0f0f0;
+}
+.product-row {
+    max-width: 500px;
+    width: 100%;
+	margin: 20px 0;
+	padding-left:20px;
+}
+._checklist img {
+    margin: 10px;
+}
+	img.attachment-large.size-large.wp-post-image {
+    margin: 40px auto;
+}
+@media screen and (min-width: 768px){
+		._checklist{
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			padding: 20px 0;
+			border-bottom: 1px lightgray solid;
+		}
+	._radio div{
+		display:block;
+	}
+}
+div#filter {
+    text-align: center;
+}
+._check h1 {
+    text-align: center;
+}
+._checklist-section {
+    margin-bottom: 80px;
+}
+
+
+/* -----------------------Site Specific CSS--------------------------- */
+._check .entry-title a{
+	color:black !important;
+}
+._check .g-columns__item--nine {
+    padding: 0 20px !important;
+}
+._check ._tb-post-loop{
+	margin:40px 0;
+}
+._check ._readmore{
+	position: relative !important;
+	max-width: 100px;
+	top:0 !important;
+}
+.post-type-archive-checklist .masthead__image, .checklist-template-default .masthead__image{ display:none !important;}
+._checklist {
+    position: relative;
+	border-bottom: 1px black solid;
+    margin-bottom: 3px;
+}
+._number {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    Width: 100px;
+    background: #446fb3;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-family: 'Oswald';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.b-btn,a.b-btn:focus, ._check button {
+    background: #037bbf;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+	border:none;
+	text-decoration: none;
+}
+a.b-btn:hover, ._check button:hover {
+    background: #0693e3;
+	text-decoration: none;
+	color:white;
+}
+._check button{
+	margin:10px;
+	cursor: pointer;
+}
+._check button:disabled {
+    background: #999;
+    pointer-events: none;
+}
+._image-pro{
+	text-align: center;
+}
+#share-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  z-index: 1000; /* Sit on top */
+}
+
+/* Modal content */
+#share-modal input,
+#share-modal button {
+  display: block;
+  margin: 8px auto;
+	font-size:18px;
+}
+
+/* The actual modal */
+#share-modal div {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/* The copy button */
+#copy-link-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #037bbf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#copy-link-button:hover {
+  background-color: #0693e3;
+}
+.checkbut {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+	flex-wrap: wrap;
+}
+	.bgcol[disabled] {
+    position: relative;
+}
+._shared .bgcol[checked]:after {
+    content: '';
+    background: #0693e3;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 10px;
+    top: 3px;
+    left: 3px;
+}
+@media screen and (min-width: 768px){
+	._checklist {
+    position: relative;
+    padding-left: 100px;
+	padding-right:200px;
+}
+	._number{
+		 height: 100%;
+	}
+	._radio {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+}
+@media screen and (max-width: 768px){
+	._check button{
+		min-width:40%;
+	}
+		._number{
+		 height: 100%;
+		 height: 70px;
+         Width: 70px;
+		 font-size: 27px;
+	}
+}
+@media print {
+  /* Hide elements you don't want to print */
+  header.g-header.full-width, #filter, ._no-print, button,.g-footer__site-nav, img, article, .b-btn, .masthead__content, ._sticky-footer{
+    display: none !important;
+  }
+	._number{
+	position:absolute;
+    height: 50px;
+    Width: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: 'Oswald';
+		Top:30px;
+	}
+	._checklist{
+		padding:0;
+		display:flex;
+	}
+	.product {
+        page-break-inside: avoid;
+    }
+	.adsbygoogle{
+		display:none !important;
+	}
+}
+.post-type-archive-checklist article:nth-child(even):after{
+	border-left:none !important;
+}
+form#front-end-checklist-form {
+    margin: 40px 0;
+}
+._checklist_title {
+    margin: 20px 0;
+}
+
+.checklist-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.checklist-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.checklist-item input[type="number"],
+.checklist-item input[type="text"],
+.checklist-item textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checklist-item .upload_image_button{
+    background: #037bbf;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    bottom: 55px;
+	font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+#front-end-checklist-form input[type="submit"], #front-end-checklist-form button#add-checklist-item, #front-end-checklist-form ._button, a.edit-checklist-button, .create-list-button-container ._button{
+	background: #037bbf;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+	margin: 10px;
+    cursor: pointer;
+	font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.checklist-item .upload_image_button:hover {
+    background-color: #45a049;
+}
+
+.checklist-item .remove-item {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+	font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+main#primary {
+    position: relative;
+}
+.create-list-button-container {
+    position: absolute;
+}
+
+
+.checklist-item .remove-item:hover {
+    background-color: #d32f2f;
+}
+
+.image_preview img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resize only */
+    min-height: 100px; /* Minimum height */
+}
+.checklist-item div:nth-of-type(1), .checklist-item div:nth-of-type(2) {
+    display: inline-block;
+    width: 200px;
+}
+form#front-end-checklist-form {
+    padding: 0 20px;
+}
+.checklist-item {
+    display: block;
+    gap: 20px;
+    padding-right: 85px;
+    justify-content: space-between;
+}
+._checklist-form {
+    position: relative;
+	border-bottom: 1px black dashed;
+}
+._checklist-form input[type="submit"] {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+@media screen and (min-width: 768px){
+	.checklist-item {
+    display: flex;
+	}
+	.checklist-item .remove-item {
+    bottom: 15px;
+}
+	.checklist-item .upload_image_button {
+    bottom: 65px;
+}
+}

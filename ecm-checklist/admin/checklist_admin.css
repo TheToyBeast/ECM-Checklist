@@ -1,0 +1,87 @@
+.product-row {
+
+    margin-bottom: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px lightgrey solid;
+
+}
+
+.row1, .row2{
+
+	display: flex;
+
+    align-items: center;
+	flex-wrap: wrap;
+
+	
+
+}
+
+.product-row input {
+
+    width: 20%;
+
+	min-width: 200px;
+
+    margin-bottom: 5px;
+
+}
+
+input#upload_image_button_, input#upload_image_button {
+
+
+
+    max-width: 120px;
+
+    min-width: 0;
+
+}
+
+button.remove-row.button {
+
+    margin-top: 20px;
+
+}
+
+.post-type-checklist label{
+
+	min-width:80px;
+
+	padding:5px;
+
+	text-align: center;
+
+}
+
+.row3 {
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    align-items: center;
+
+}
+
+img#product_image_display_, img.product_image_display {
+
+    margin: 10px 30px;
+
+}
+
+input[name="product_description[]"] {
+
+    width: 80%;
+
+	max-width: 800px;
+
+}
+input[type="number"] {
+    width: 100px;
+    min-width: 0;
+}
+
