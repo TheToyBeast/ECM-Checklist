@@ -1,6 +1,6 @@
 # ECM Checklist Plugin for WordPress
 
-The WP Checklist Plugin developed by Cristian Ibanez for East Coast Marketing enables WordPress users to create and manage custom checklists with a dedicated post type. It features comprehensive functionality for handling items in the checklist including creating, updating, and managing products within a checklist.
+The WP Checklist Plugin developed by Cristian Ibanez for East Coast Marketers enables WordPress users to create and manage custom checklists with a dedicated post type. It features comprehensive functionality for handling items in the checklist including creating, updating, and managing products within a checklist.
 
 ## Features
 
